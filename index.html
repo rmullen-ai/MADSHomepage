@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>November Cycle · Math + AI Design Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<nav class="site-nav" id="site-nav" aria-label="Studio navigation">
+  <div class="inner">
+    <span class="brand">Math + AI Design Studio</span>
+    <ul>
+      <li><a href="/" aria-current="page">November Cycle</a></li>
+      <li><a href="/pressure-tests.html">Pressure tests</a></li>
+    </ul>
+  </div>
+</nav>
+<main class="wrap">
+  <p class="coach-date">November Cycle</p>
+  <h1>Coaching Session</h1>
+  <p class="lede">Use a general test to observe how an app responds, reflect with a critical friend, and run a pressure test to identify one change to try.</p>
+  <div class="coach-sections">
+    <section class="coach-card" aria-labelledby="agreements">
+      <h2 id="agreements">Community agreements</h2>
+      <ul>
+        <li>Stay engaged and curious.</li>
+        <li>Stories stay, learning leaves.</li>
+        <li>Be mindful of airtime and promote equity of voice.</li>
+        <li>Recognize power dynamics. Be aware of your own power and privilege and how to use it.</li>
+        <li>Acknowledge intent, prioritize impact, and keep the conversation going.</li>
+        <li>Treat disagreement as a positive opportunity for learning.</li>
+        <li>Be respectful and mindful of our own and others’ strengths and growing edges.</li>
+      </ul>
+    </section>
+    <section class="coach-card" aria-labelledby="agenda">
+      <h2 id="agenda">Session agenda</h2>
+      <ol>
+        <li><strong>Welcome and introduction</strong><p>Continue building community as an AI Collaborative.</p></li>
+        <li><strong>Use a general test to observe and reflect</strong><p>Run your app with fictional input and practice answering reflective questions about its response.</p><a href="https://drive.google.com/drive/folders/16E3MkSTZ6nrA0XToG_ytbU8cbanshDM-?usp=sharing">Open the workbook folder</a></li>
+        <li>
+          <strong>Critical friendship</strong>
+          <p>Practice answering reflective questions about your critical friend’s app. Use their workbook to guide the conversation.</p>
+          <div class="participant-apps">
+            <label for="participant-name">Find a participant’s app</label>
+            <select id="participant-name" disabled>
+              <option value="">Select a participant</option>
+            </select>
+            <p class="participant-status" id="participant-status" role="status"></p>
+            <div class="participant-result" aria-live="polite">
+              <a id="participant-app" target="_blank" rel="noopener noreferrer" hidden></a>
+            </div>
+            <noscript><p>Enable JavaScript to look up a participant’s app.</p></noscript>
+          </div>
+        </li>
+        <li><strong>Run a pressure test</strong><p>Choose a test based on what you noticed. Use the results to identify one targeted revision.</p><a href="/pressure-tests.html">Browse pressure tests</a></li>
+        <li><strong>Wrap up</strong><p>Plan for Coaching Cycle 3.</p></li>
+      </ol>
+    </section>
+  </div>
+  <footer>Math + AI Design Studio, Bank Street Education Center</footer>
+</main>
+<script src="./participant-apps.js" defer></script>
+</body>
+</html>
