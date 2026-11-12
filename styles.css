@@ -121,3 +121,5 @@ a:focus-visible,[tabindex="0"]:focus-visible{outline:3px solid var(--c-tp);outli
 .participant-apps select:focus-visible{outline:3px solid var(--c-tp);outline-offset:3px}
 .participant-apps .participant-status{margin:0}
 .participant-apps .participant-status:empty{display:none}
+
+.participant-result:not([hidden]){display:flex;flex-wrap:wrap;gap:6px 18px}

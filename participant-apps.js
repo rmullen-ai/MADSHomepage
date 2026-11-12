@@ -1,6 +1,7 @@
 const participantSelect = document.getElementById("participant-name");
 const participantStatus = document.getElementById("participant-status");
 const participantLink = document.getElementById("participant-app");
+const participantResult = document.getElementById("participant-result");
 
 function readCsv(text) {
   const rows = [];
@@ -71,9 +72,9 @@ async function populateParticipants() {
       if (participant) {
         participantLink.href = participant.url;
         participantLink.textContent = `Open app for ${participant.name} ↗`;
-        participantLink.hidden = false;
+        participantResult.hidden = false;
       } else {
-        participantLink.hidden = true;
+        participantResult.hidden = true;
         participantLink.removeAttribute("href");
         participantLink.textContent = "";
       }
