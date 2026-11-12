@@ -52,23 +52,35 @@
           <p>Reconnect as a MADS community and continue to build community!</p>
           <a href="/community-builder.jpg" target="_blank" rel="noopener">Which Blob are you feeling like? ↗</a>
         </li>
-        <li><strong>Use a General Test to Observe and Reflect</strong><p>Test your app and practice answering reflective questions through a general test</p><a href="https://drive.google.com/drive/folders/16E3MkSTZ6nrA0XToG_ytbU8cbanshDM-?usp=sharing">Open the workbook folder</a></li>
+        <li>
+          <strong>Use a General Test to Observe and Reflect</strong><p>Test your app and practice answering reflective questions through a general test</p>
+          <div class="participant-apps" data-workbook-lookup>
+            <label for="own-workbook">Find your workbook</label>
+            <select id="own-workbook" disabled>
+              <option value="">Select your name</option>
+            </select>
+            <p class="participant-status" role="status"></p>
+            <div class="participant-result" aria-live="polite">
+              <a data-workbook-link target="_blank" rel="noopener noreferrer" hidden></a>
+              <a href="https://drive.google.com/drive/folders/16E3MkSTZ6nrA0XToG_ytbU8cbanshDM-?usp=sharing" target="_blank" rel="noopener noreferrer">Open workbook folder ↗</a>
+            </div>
+            <noscript><p>Enable JavaScript to look up a workbook by name.</p></noscript>
+          </div>
+        </li>
         <li>
           <strong>Engage in Critical Friendship</strong>
           <p>Review a Critical Friend’s app and practice answering reflective feedback questions together</p>
-          <div class="participant-apps">
-            <label for="participant-name">Find a participant’s app</label>
-            <select id="participant-name" disabled>
-              <option value="">Select a participant</option>
+          <div class="participant-apps" data-workbook-lookup>
+            <label for="critical-friend-workbook">Find your Critical Friend’s workbook</label>
+            <select id="critical-friend-workbook" disabled>
+              <option value="">Select your Critical Friend’s name</option>
             </select>
-            <p class="participant-status" id="participant-status" role="status"></p>
-            <div aria-live="polite">
-              <div class="participant-result" id="participant-result" hidden>
-                <a id="participant-app" target="_blank" rel="noopener noreferrer"></a>
-                <a href="https://drive.google.com/drive/folders/16E3MkSTZ6nrA0XToG_ytbU8cbanshDM-?usp=sharing" target="_blank" rel="noopener noreferrer">Open participant workbooks ↗</a>
-              </div>
+            <p class="participant-status" role="status"></p>
+            <div class="participant-result" aria-live="polite">
+              <a data-workbook-link target="_blank" rel="noopener noreferrer" hidden></a>
+              <a href="https://drive.google.com/drive/folders/16E3MkSTZ6nrA0XToG_ytbU8cbanshDM-?usp=sharing" target="_blank" rel="noopener noreferrer">Open workbook folder ↗</a>
             </div>
-            <noscript><p>Enable JavaScript to look up a participant’s app.</p></noscript>
+            <noscript><p>Enable JavaScript to look up a workbook by name.</p></noscript>
           </div>
         </li>
         <li><strong>Run a Pressure Test</strong><p>Run a protocol to identify areas for additional tests to inform improvement in your apps</p><a href="/pressure-tests.html">Browse pressure tests</a></li>
@@ -78,7 +90,7 @@
   </div>
   <footer>Math + AI Design Studio, Bank Street Education Center</footer>
 </main>
-<script src="./participant-apps.js" defer></script>
+<script src="./participant-workbooks.js" defer></script>
 <script src="/cycle-menu.js" defer></script>
 </body>
 </html>
