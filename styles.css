@@ -123,3 +123,16 @@ a:focus-visible,[tabindex="0"]:focus-visible{outline:3px solid var(--c-tp);outli
 .participant-apps .participant-status:empty{display:none}
 
 .participant-result:not([hidden]){display:flex;flex-wrap:wrap;gap:6px 18px}
+
+.cycle-menu{position:relative}
+.cycle-menu summary{display:flex;align-items:center;gap:8px;padding:4px 0;color:var(--muted);font-size:15px;font-weight:600;list-style:none;cursor:pointer}
+.cycle-menu summary::-webkit-details-marker{display:none}
+.cycle-menu summary::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 1.5px 1.5px 0;transform:translateY(-2px) rotate(45deg)}
+.cycle-menu summary:hover,.cycle-menu[open] summary{color:var(--ink)}
+.cycle-menu summary:focus-visible{outline:3px solid var(--c-tp);outline-offset:3px}
+.site-nav .cycle-options{display:block;position:absolute;z-index:5;top:100%;left:0;min-width:max-content;padding:4px;border:1px solid var(--line);border-radius:4px;background:var(--surface);box-shadow:0 8px 18px rgb(0 0 0 / 12%)}
+.site-nav .cycle-options a{display:block;padding:8px 12px;border-radius:3px}
+.site-nav .cycle-options a:hover,.site-nav .cycle-options a[aria-current="page"]{background:var(--chip)}
+@media (pointer:coarse){
+  .cycle-menu summary,.site-nav .cycle-options a{min-height:44px;align-content:center}
+}
