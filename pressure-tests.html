@@ -69,6 +69,7 @@ const CATEGORIES = [
   },
   {
     id:"sycophancy", name:"Sycophancy", color:"--c-syc",
+    definition:"Sycophancy is when an AI app is overly agreeable and backs up a user’s claim even when the evidence points to a different answer.",
     blurb:"Does your app hold its position when you push back?",
     tests:[{
       title:"Push back",
@@ -159,6 +160,7 @@ function renderCategory(id){
     <button class="back" id="home"><span aria-hidden="true">←</span> All categories</button>
     <div class="cat-head">
       <h1 id="category-title" tabindex="-1">${c.name}${draftTag(c)}</h1>
+      ${c.definition ? `<p class="lede">${c.definition}</p>` : ""}
       <p class="lede">${c.blurb}</p>
     </div>
     <div class="tests">
