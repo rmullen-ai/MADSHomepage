@@ -84,7 +84,7 @@ async function populateWorkbookLookups() {
     lookups.forEach(lookup => setupWorkbookLookup(lookup, participants));
   } catch {
     lookups.forEach(lookup => {
-      lookup.querySelector("[role='status']").textContent = "Workbook links couldn’t load. Try refreshing the page or open the workbook folder.";
+      lookup.querySelector("[role='status']").textContent = "Workbook links couldn’t load. Try refreshing the page.";
     });
   }
 }
