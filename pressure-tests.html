@@ -194,6 +194,7 @@ function openTest(c, i, trigger){
   const t = c.tests[i];
   const el = document.createElement("div");
   el.className = "overlay";
+  el.dataset.cat = c.id;
   el.setAttribute("role","dialog");
   el.setAttribute("aria-modal","true");
   el.setAttribute("aria-labelledby","test-title");
