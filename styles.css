@@ -1,6 +1,6 @@
 :root{
   --bg:#F5F7FA; --grid:#E3E8EF; --surface:#FFFFFF; --ink:#1C2638; --muted:#566178; --line:#D5DCE6;
-  --c-bias:#7A4FB5; --c-syc:#C2410C; --c-tp:#0F7B6C;
+  --c-bias:#7A4FB5; --c-syc:#C2410C; --c-tp:#216A95;
   --chip:#EEF1F6; --onaccent:#FFFFFF;
   --serif:"Newsreader", Georgia, "Times New Roman", serif;
   --sans:"Instrument Sans", "Helvetica Neue", Arial, sans-serif;
@@ -12,12 +12,12 @@
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#121821; --grid:#1C2430; --surface:#18202C; --ink:#E7ECF3; --muted:#A3AEBF; --line:#2C3747;
-    --c-bias:#B794E8; --c-syc:#F08A55; --c-tp:#4CC3B0; --chip:#222C3A; --onaccent:#121821; color-scheme:dark;
+    --c-bias:#B794E8; --c-syc:#F08A55; --c-tp:#85ADC5; --chip:#222C3A; --onaccent:#121821; color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
   --bg:#121821; --grid:#1C2430; --surface:#18202C; --ink:#E7ECF3; --muted:#A3AEBF; --line:#2C3747;
-  --c-bias:#B794E8; --c-syc:#F08A55; --c-tp:#4CC3B0; --chip:#222C3A; --onaccent:#121821; color-scheme:dark;
+  --c-bias:#B794E8; --c-syc:#F08A55; --c-tp:#85ADC5; --chip:#222C3A; --onaccent:#121821; color-scheme:dark;
 }
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
